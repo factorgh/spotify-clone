@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import ShuffleIcon from '@mui/icons-material/Shuffle';
+import styled from "styled-components";
+import ShuffleOnIcon from '@mui/icons-material/ShuffleOn';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
         </FooterFirst>
        <FooterCenter>
-        <ShuffleIcon color="success"/>
+        <ShuffleOnIcon color="success"/>
         <SkipPreviousIcon/>
         <PlayerIcon/>
         <SkipNextIcon/>
