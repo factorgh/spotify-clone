@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import styled from "styled-components"
 import Header from "./Header"
-import PlayCircleIcon from "@mui/icons-material/PlayCircle"
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import { HiPlay ,HiDotsHorizontal,HiHeart} from "react-icons/hi";
+
+
 import PlayListRow from "./PlayListRow";
 import { useData } from "../dataLayer/dataLayer";
 
@@ -42,7 +42,7 @@ h3{
 }
 p{
   padding: 5px;
-  colors:black;
+  color:black;
   font-weight:bold;
 }
 `
@@ -70,7 +70,7 @@ const Body = () => {
         </BannerContent>
       </Banner>
       <IconStore >
-        <PlayCircleIcon sx={{fontSize: 70}} color="success" />
+        <HiPlay sx={{fontSize: 70}} color="success" />
         <FaveIcon />
         <MoreIcon/>
       </IconStore>
@@ -87,12 +87,12 @@ width:90%;
 margin:auto;
 `
 
-const MoreIcon = styled(MoreHorizIcon)`
+const MoreIcon = styled(HiDotsHorizontal)`
 color:white;
 margin-left: 10px;
 `
 
-const FaveIcon = styled(FavoriteIcon)`
+const FaveIcon = styled(HiHeart)`
 color:green;
 margin-left:10px;
 `

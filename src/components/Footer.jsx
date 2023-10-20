@@ -1,12 +1,7 @@
 import styled from "styled-components";
-import ShuffleOnIcon from '@mui/icons-material/ShuffleOn';
-import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
-import SkipNextIcon from '@mui/icons-material/SkipNext';
-import PlayCircleIcon from '@mui/icons-material/PlayCircle';
-import RepeatIcon from '@mui/icons-material/Repeat';
-import { Slider,Grid } from "@mui/material";
-import PlaylistPlayIcon from '@mui/icons-material/PlaylistPlay';
-import VolumeDownIcon from '@mui/icons-material/VolumeDown';
+
+import { HiBackward, HiOutlineForward, HiPlay } from "react-icons/hi2";
+
 
 const FooteRWrap = styled.div`
 position:fixed;
@@ -23,31 +18,23 @@ const Footer = () => {
   return (
     <FooteRWrap>
         <FooterFirst>
-            <FooterImage src="https://images.unsplash.com/photo-1503300961747-204cbbdaeb51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGxpc3RlbmluZyUyMHRvJTIwbXVzaWN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="" />
+            <FooterImage 
+            src="https://images.unsplash.com/photo-1503300961747-204cbbdaeb51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGxpc3RlbmluZyUyMHRvJTIwbXVzaWN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+            alt="" 
+            />
             <div>
                 <p>J.Cole</p>
                 <h6>Yeah</h6>
             </div>
         </FooterFirst>
        <FooterCenter>
-        <ShuffleOnIcon color="success"/>
-        <SkipPreviousIcon/>
+        
+        <HiBackward/>
         <PlayerIcon/>
-        <SkipNextIcon/>
-        <RepeatIcon color="success"/>
+        < HiOutlineForward/>
        </FooterCenter>
        <FooterEnd>
-        <Grid container spacing={2} >
-        <Grid item >
-            <PlaylistPlayIcon/>
-            </Grid>
-            <Grid item >
-            <VolumeDownIcon />
-            </Grid>
-            <Grid item xs>
-            <Slider color="success" defaultValue={30}  />
-            </Grid> 
-        </Grid>
+        
        </FooterEnd>
     </FooteRWrap>
   )
@@ -75,7 +62,7 @@ align-items:center;
 color:white;
 `
 
-const PlayerIcon = styled(PlayCircleIcon)`
+const PlayerIcon = styled(HiPlay)`
 &:hover{
     color:color;
     font-size: 30px;

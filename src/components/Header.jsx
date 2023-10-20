@@ -1,21 +1,21 @@
 import styled from "styled-components"
-import  SearchIcon  from '@mui/icons-material/Search';
-import { Avatar } from "@mui/material";
-import { useData } from "../dataLayer/dataLayer";
+import {HiEmojiHappy} from "react-icons/hi"
+import { useData} from "../dataLayer/dataLayer";
+import {HiSearch} from "react-icons/hi"
 
 
 
 
 const Header = () => {
-    const [{user},dispatch] = useData();
+    const [{user},] = useData();
   return (
     <HeaderNav>
         <HeaderNavLeft>
-            <SearchIcon color="success"/>
+            <HiSearch/>
             <input type="text" placeholder="Search for artist,songs" />
         </HeaderNavLeft>
         <HeaderNavRight>
-        <Avatar />
+      <HiEmojiHappy/>
         <h3>{user?.display_name}</h3>
         </HeaderNavRight>
     </HeaderNav>

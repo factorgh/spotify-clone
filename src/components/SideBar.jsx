@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Home from '@mui/icons-material/Home';
-import SearchIcon from '@mui/icons-material/Search';
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import {HiSearch,HiHome,} from "react-icons/hi";
+import {HiMiniMusicalNote} from "react-icons/hi2"
+
 import SideBarOptions from './SideBarOptions';
 import { useData } from '../dataLayer/dataLayer';
 
@@ -39,9 +39,9 @@ const SideBar = () => {
   return (
     <SideBarWrap>
       <SideBarImage src="https://img.freepik.com/premium-photo/music-mind-music-abstract-art-created-with-generative-ai-technology_545448-15311.jpg" alt="" />
-      <SideBarOptions Icon={Home} title="Home"/>
-      <SideBarOptions Icon={SearchIcon} title="Search"/>
-      <SideBarOptions  Icon={MusicNoteIcon} title="Your Library"/>
+      <SideBarOptions Icon={HiHome} title="Home"/>
+      <SideBarOptions Icon={HiSearch} title="Search"/>
+      <SideBarOptions  Icon={HiMiniMusicalNote} title="Your Library"/>
       <br />
       <PlayListTitle>
     <PlayListHeader>PLAYLIST</PlayListHeader>
